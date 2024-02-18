@@ -5,18 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD Bus - Top Bangladeshi Bus Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header></header>
+    <header class="w-11/12 mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost px-2 lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-[#030712b3]">Home</a></li>
+                        <li><a class="text-[#030712b3]">About</a></li>
+                        <li><a class="text-[#030712b3]">Destination</a></li>
+                        <li><a class="text-[#030712b3]">Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost px-0 text-4xl font-extrabold">BD Bus</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal font-medium px-1">
+                    <li><a class="text-[#030712b3]">Home</a></li>
+                    <li><a class="text-[#030712b3]">About</a></li>
+                    <li><a class="text-[#030712b3]">Destination</a></li>
+                    <li><a class="text-[#030712b3]">Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a href="#ticket"
+                    class="btn bg-[#1dd1001a] hover:bg-[#1dd1001a] font-bold text-[#34D51B] border border-[#1dd10066] hover:border-[#1dd10066] rounded-xl">
+                    Bus
+                    <img src="images/bus-icon.png" alt="Bus">
+                </a>
+            </div>
+        </div>
+    </header>
 
-    <main></main>
+    <main class="w-11/12 mx-auto mt-4 mb-8">
+        <section>
+            <div class="hero h-[550px] rounded-2xl" style="background-image: url(images/banner.png);">
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-xl">
+                        <h1 class="mb-5 text-white text-5xl font-extrabold">End-to-End Travel with</h1>
+                        <h1 class="mb-5 text-[#1DD100] text-5xl font-extrabold">BD Bus</h1>
+                        <p class="text-white mb-5">Ride in comfort and style! Your reliable bus service for seamless
+                            journeys and unforgettable adventures. Book now!
+                        </p>
+                        <button onclick="window.location.href='#ticket'"
+                            class="btn btn-primary bg-[#1DD100] hover:bg-[#1DD100] text-[#030712] font-bold border-none">
+                            Buy Tickets
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-20">
+            <h1 class=" text-center font-bold text-4xl mb-[48px]">
+                Best offers for you
+            </h1>
+            <div class="flex flex-col lg:flex-row justify-around gap-8 lg:gap-12">
+                <div class="lg:w-1/2 h-full bg-[#FFBF0F] rounded-3xl">
+                    <div class="flex items-center justify-around py-8">
+                        <div class="flex items-center">
+                            <div class="flex flex-col inter">
+                                <h2 class="text-4xl font-extrabold">15% OFF</h2>
+                                <h5 class="text-lg font-semibold">on your next purchase </h5>
+                                <p class="font-medium">use by January 2024</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute rounded-full w-8 h-8 bg-white -top-[2.85rem] -left-[1rem]"></div>
+                            <div class="border-e-2 border-white border-dashed h-[100px]"></div>
+                            <div class="absolute rounded-full w-8 h-8 bg-white -bottom-[2.85rem] -left-[1rem]"></div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3 class="text-3xl font-bold">NEW15</h3>
+                            <p class="font-medium">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 h-full bg-[#F78C9C] rounded-3xl">
+                    <div class="flex items-center justify-around py-8">
+                        <div class="flex items-center">
+                            <div class="flex flex-col inter">
+                                <h2 class="text-4xl font-extrabold">20% OFF</h2>
+                                <h5 class="text-lg font-semibold">on your next purchase </h5>
+                                <p class="font-medium">use by January 2024</p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute rounded-full w-8 h-8 bg-white -top-[2.85rem] -left-[1rem]"></div>
+                            <div class="border-e-2 border-white border-dashed h-[100px]"></div>
+                            <div class="absolute rounded-full w-8 h-8 bg-white -bottom-[2.85rem] -left-[1rem]"></div>
+                        </div>
+                        <div class="flex flex-col">
+                            <h3 class="text-3xl font-bold">Couple 20</h3>
+                            <p class="font-medium">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <a href="#"
+                    class="px-5 py-3 text-lg font-semibold text-[#1DD100] border border-[#1DD100] rounded-lg">See All
+                    Offers</a>
+            </div>
+        </section>
+    </main>
 
-    <footer></footer>
-
+    <footer class="bg-black">
+        <section class="w-11/12 mx-auto footer py-10 text-base-content">
+            <nav>
+                <h1 class="text-white text-4xl font-extrabold">BD Bus</h1>
+                <p class="inter text-[#ffffffcc]">BD Bus is a digital platform to make your daily commuting better.</p>
+            </nav>
+            <nav class="md:place-self-center md:justify-self-end">
+                <p class="text-white font-semibold">Download our app</p>
+                <img src="images/playstore.png" alt="">
+            </nav>
+        </section>
+        <section class="w-11/12 mx-auto footer py-4 border-t border-dashed text-base-content border-base-300">
+            <aside class="items-center grid-flow-col">
+                <p class="text-[#ffffffcc]">ⓒ 2024 BD Bus Services Limited. All Rights Reserved.</p>
+            </aside>
+            <nav class="md:place-self-center md:justify-self-end">
+                <div class="grid grid-flow-col gap-4 *:text-white">
+                    <a href="#">Terms & condition</a>
+                    <a href="#">Return & refund policy</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+            </nav>
+        </section>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
