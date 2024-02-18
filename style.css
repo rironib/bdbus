@@ -1,5 +1,9 @@
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #f7f8f8;
+}
+.Raleway {
+  font-family: "Raleway", sans-serif;
 }
 .inter {
   font-family: "Inter", sans-serif;
