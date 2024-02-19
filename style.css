@@ -1,6 +1,5 @@
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #f7f8f8;
 }
 .Raleway {
   font-family: "Raleway", sans-serif;
@@ -9,9 +8,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* Colors */
-
-/* Model */
+/* Modal */
 #modal {
   display: none;
   position: fixed;
